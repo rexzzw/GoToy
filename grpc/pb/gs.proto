@@ -1,0 +1,17 @@
+syntax = "proto3";
+package pb;
+
+import "google/protobuf/timestamp.proto";
+
+service Test {
+    rpc GetHelloWorld(GetHelloWorldRequest) returns (GetHelloWorldRequest) {
+    }
+}
+message GetHelloWorldRequest {
+    string name = 1;
+}
+
+message GetHelloWorldResponse {
+    string name = 1;
+    google.protobuf.Timestamp now = 2;
+}

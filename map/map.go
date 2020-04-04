@@ -1,17 +1,17 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    mapA := map[string]bool{
-        "A": false,
-    }
+	mapA := map[string]bool{
+		"A": false,
+	}
 
-    getB, ok := mapA["B"]
-    fmt.Println("getB:", getB, "ok:", ok)
+	getB, ok := mapA["B"]
+	fmt.Println("getB:", getB, "ok:", ok)
 
-    c := mapA["C"]
-    fmt.Println("c:", c)
+	c := mapA["C"]
+	fmt.Println("c:", c)
 }
